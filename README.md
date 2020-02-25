@@ -346,6 +346,16 @@ function onMessage(msg) {
 
 ```
 
+<a name="9EtUD"></a>
+## 代码部署
+
+- docker部署
+
+```sh
+# docker部署，进入到src目录下执行
+docker run --name=monitor-bot  -e WECHATY_PUPPET="wechaty-puppet-padplus" -e  WECHATY_PUPPET_PADPLUS_TOKEN="你的token"  --volume="$(pwd)":/bot   zixia/wechaty:latest bot.js
+```
+
 <a name="iNWIv"></a>
 ## 常见问题汇总
 
