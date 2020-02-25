@@ -1,0 +1,16 @@
+{
+  "name": "wechaty-server-monitor-bot",
+  "version": "1.0.0",
+  "description": "服务器监控小助手",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Darren",
+  "license": "ISC",
+  "dependencies": {
+    "moment-timezone": "^0.5.28",
+    "os": "^0.1.1",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
