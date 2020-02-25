@@ -1,13 +1,11 @@
 ---
 title: 服务器监控小助手
 author: Darren
-date: '2020-00-23 09:30:52 +0800'
+date: '2020-02-25 09:30:52 +0800'
 categories: project
 tags:
   - open source
   - bot
-header:
-  teaser: /assets/2019/chatie-devops-toolset.gif
 ---
 
 > Author: [Darren](https://github.com/Jesn/), A DevOps fan.
@@ -45,7 +43,7 @@ github： [https://github.com/Jesn/server-monitor-bot](https://github.com/Jesn/
 <a name="b4DzC"></a>
 ### 一、wechaty初始化
 
-```json
+```javascript
 import { Wechaty, config } from 'wechaty';
 
 # 添加name属性防止掉线
@@ -88,7 +86,7 @@ function onError(e) {
 - 安装 `node-schedule` 包 `npm install node-schedule --save`
 - 新增一个 `scheduleJob.js` 文件，作为定时任务启动的主页面
 
-```json
+```javascript
 const schedule = require('node-schedule')
 // date 参数
 
@@ -130,7 +128,7 @@ module.exports = {
 
 - 在wechaty扫码登完成，登陆成功后即可触发定时任务，即可配置在Login里面
 
-```json
+```javascript
 # 添加scheduleJob.js 启动文件
 const schedule = require('./scheduleJob');
 
@@ -166,7 +164,7 @@ npm install diskinfo --save
 <a name="atlHg"></a>
 #### 4.2、获取服务器信息
 
-```json
+```javascript
 /**
  * 获取电脑系统信息
  */
@@ -257,7 +255,8 @@ function Computer() {
 <a name="zYEVx"></a>
 #### 4.3、定时获取服务器资源并发送
 
-```json
+```javascript
+ /*
  * 定时任务
  */
 async function timingTaskMain() {
@@ -273,7 +272,7 @@ async function timingTaskMain() {
 <a name="PXqXs"></a>
 ### 五、美化输出格式
 
-```json
+```javascript
     // CPU 详情
     let cpuDetailMsg = '';
     for (let index = 0; index < computerInfo.cpu_info.length; index++) {
@@ -329,7 +328,7 @@ CPU详情 : ${cpuDetailMsg}
 <a name="pfKYW"></a>
 ### 六、关键字触发
 
-```json
+```javascript
 function onMessage(msg) {
     console.log(msg);
     let contact = msg.from();
