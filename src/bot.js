@@ -1,4 +1,4 @@
-import { Wechaty, config } from 'wechaty';
+import { Wechaty, config } from './src/node_modules/wechaty';
 const qrTerm = require('qrcode-terminal');
 
 const os = require('os');
@@ -57,8 +57,8 @@ function onError(e) {
  * 定时任务
  */
 async function timingTaskMain() {
-    // 5分钟执行一次
-    schedule.setSchedule('0 0/5 * * * ?', async () => {
+    // 每天的第30分钟执行
+    schedule.setSchedule('* 30 * * * *', async () => {
         // 定时任务业务处理
         const filehelper = bot.Contact.load('filehelper');
         let computer_ifno = computerMsg();
