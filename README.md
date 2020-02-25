@@ -28,7 +28,7 @@ github： [https://github.com/Jesn/server-monitor-bot](https://github.com/Jesn/
 
 - JSON格式数据
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/247957/1582471659515-e1fe1268-bd19-4e49-ae22-5e7ef579c010.png#align=left&display=inline&height=686&name=image.png&originHeight=2160&originWidth=1080&size=1654783&status=done&style=none&width=343)
+![image.png](https://cdn.nlark.com/yuque/0/2020/png/247957/1582471659515-e1fe1268-bd19-4e49-ae22-5e7ef579c010.png?x-oss-process=image/resize,w_343)
 
 - 美化后格式
 
