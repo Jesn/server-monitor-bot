@@ -361,7 +361,12 @@ docker run --name=monitor-bot  -e WECHATY_PUPPET="wechaty-puppet-padplus" -e  WE
 
 - node版本是否大于10
 - wechaty、wechaty-puppet-padpro 这些包安装失败，经常卡在环境配置上，建议使用docker配置
-- 经常夜晚掉线，在初始化wechaty的时候添加那么属性
+- 如果padplus每天存在掉线问题：
+
+    **1.** 先检查padplus版本，若版本低于0.3.0请更新。<br />
+    **2.** 检查是否指定了name属性。<br />
+    **3.** 观察掉线设备号，看看是否有发生变化，可以通过退出后再次登录，反复两到三次来观察。
+
 - 如何申请token？ --->通过填写句子互动wechaty token申请表 [https://juzibot.wjx.cn/jq/55789515.aspx](https://juzibot.wjx.cn/jq/55789515.aspx)
 - docker如果出现grpc网关超时，可以尝试重启docker服务,注意不是重启容器
 - 使用wechaty如何防止被封号，操作尽量拟人化
