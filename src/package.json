@@ -9,7 +9,7 @@
   "author": "Darren",
   "license": "ISC",
   "dependencies": {
-    "moment-timezone": "^0.5.28",
+    "moment-timezone": "^0.5.35",
     "os": "^0.1.1",
     "qrcode-terminal": "^0.12.0"
   }
